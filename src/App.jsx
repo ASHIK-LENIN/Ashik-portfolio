@@ -11,6 +11,8 @@ import AnimatedCursor from "react-animated-cursor"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   useEffect(() => {
@@ -21,6 +23,20 @@ function App() {
       delay: 200,
     });
   },[]);
+
+  <ToastContainer
+  position="top-center"
+  autoClose={5000}
+  hideProgressBar={false}
+  newestOnTop={false}
+  closeOnClick
+  rtl={false}
+  pauseOnFocusLoss
+  draggable
+  pauseOnHover
+  theme="light"
+  transition:Bounce
+/>
  
   return (
     <div className={styles.App } >

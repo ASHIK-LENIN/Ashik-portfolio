@@ -4,8 +4,7 @@ import styles from "./Contact.module.css";
 
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 
 export const Contact = () => {
@@ -18,13 +17,14 @@ export const Contact = () => {
       .then((result) => {
         console.log(result.text);
         form.current.reset();
+        toast.success('Login Successfully!')
       }, (error) => {
         console.log(error.text);
       });
 
 
   };
-  let notify = () => toast("Email send successfully");
+ 
 
   return (
     <>
@@ -50,10 +50,10 @@ export const Contact = () => {
             <input type="email" name="user_email" placeholder="Enter your email..." />
             <label>Message</label>
             <textarea name="message" placeholder="What you want to share with me..." />
-            <input type="submit" value="Send" onClick={notify} />
+            <input type="submit" value="Send"  />
 
           </form>
-          <ToastContainer />
+          
 
 
 
