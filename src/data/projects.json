@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Settle Down",
+    "imageSrc": "projects/real-estate.png",
+    "description": "A Real Estate Application using MERN",
+    "skills": ["MERN","Firebase", "Tailwind CSS","Redux Toolkit"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/ASHIK-LENIN/real-estate-app"
+  },
+  {
+    "title": "News App",
+    "imageSrc": "projects/news-app.png",
+    "description": "A News Application using React.js.",
+    "skills": ["React", "Bootstrap", "NewsAPI"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/ASHIK-LENIN/News-App"
+  },
+  {
+    "title": "Advanced Store API",
+    "imageSrc": "projects/store-api.png",
+    "description": "A Store API using Express.js, MongoDB, Advanced Query Params.",
+    "skills": [ "Express", "Node", "MongoDB"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/ASHIK-LENIN/MongoDB-projects/tree/main/storeApi"
+  }
+]

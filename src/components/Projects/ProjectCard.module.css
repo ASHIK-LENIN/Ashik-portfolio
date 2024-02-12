@@ -1,0 +1,134 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 18px 24px;
+  max-width: 380px;
+  box-shadow: 10px 11px 10px 0px rgba(173, 216, 230, 0.71); /* Light Blue shadow */
+  -webkit-box-shadow: 10px 11px 10px 0px rgba(173, 216, 230, 0.71);
+  -moz-box-shadow: 10px 11px 10px 0px rgba(173, 216, 230, 0.71);
+  margin-top: 80px;
+}
+
+
+
+.image {
+  margin-bottom: 26px;
+  float: left;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 200;
+  float: right;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skill {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 22px;
+ 
+  box-shadow: 10px 11px 10px 0px rgba(0, 0, 255, 0.5); /* Reduced intensity Blue shadow */
+  -webkit-box-shadow: 10px 11px 10px 0px rgba(0, 0, 255, 0.5);
+  -moz-box-shadow: 10px 11px 10px 0px rgba(0, 0, 255, 0.5);
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 1px 22px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .skills {
+    gap: 4px;
+  }
+
+  .skill {
+    font-size: 18px;
+    padding: 2px 16px;
+  }
+
+  .links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .link {
+    font-size: 24px;
+    padding: 4px 16px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .skill {
+    font-size: 14px;
+    padding: 2px 12px;
+  }
+
+  .link {
+    font-size: 20px;
+    padding: 2px 12px;
+    margin-bottom: 8px;
+  }
+}
